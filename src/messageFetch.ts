@@ -95,7 +95,7 @@ async function getUserDisplayName(msg: Message): Promise<string> {
  */
 async function fetchConversationFromDiscord(
   channel: TextChannel | DMChannel,
-  limit: number = 30
+  limit: number = 40
 ): Promise<ConversationMessage[]> {
   try {
     // Fetch messages from Discord
@@ -158,7 +158,7 @@ async function fetchConversationFromDiscord(
  */
 async function ephemeralFetchConversation(
   channel: TextChannel | DMChannel,
-  limit: number = 30,
+  limit: number = 40,
   cacheDurationMs: number = 5000
 ): Promise<ConversationMessage[]> {
   const now = Date.now();
